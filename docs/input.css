@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ----- IMPORT FONT ----- */
+@layer base {
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Light.woff2") format("woff2"),
+      url("../assets/fonts/OpenSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Regular.woff2") format("woff2"),
+      url("../assets/fonts/OpenSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-Semibold.woff2") format("woff2"),
+      url("../assets/fonts/OpenSans-Semibold.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Open Sans";
+    src: url("../assets/fonts/OpenSans-ExtraBold.woff2") format("woff2"),
+      url("../assets/fonts/OpenSans-ExtraBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+}
+
+/* ----- BASIC STYLES ----- */
+body {
+  @apply font-body;
+}
+
+h2 {
+  @apply font-bold text-xl mb-4;
+}
+
+p {
+  @apply text-sm;
+}
+
+/* ----- NAVIGATION ----- */
+.navigation {
+  @apply flex gap-10 uppercase font-black text-sm;
+}
+
+.navigation a {
+  @apply hover:text-mountain-blue hover:transition-all;
+}
+
+/* ----- BUTTONS & LINKS ----- */
+.button {
+  @apply bg-mountain-blue hover:bg-black hover:transition-all px-12 py-3 text-white uppercase text-xs font-medium;
+}
+
+.sidelink {
+  @apply bg-mountain-blue md:hover:pr-6 md:hover:pb-0 sm:hover:pb-6 hover:transition-all;
+}
+
+.sidelink img {
+  @apply p-4 w-14 h-14;
+}
+
+/* ----- BOXES ----- */
+.mountain-box {
+  @apply relative;
+}
+
+.mountain-image::after {
+  @apply rounded-xl content-[""] bg-gradient-to-t from-black via-transparent to-transparent w-full h-full absolute top-0 left-0 z-10 hover:opacity-0 hover:transition-all;
+}
+
+.mountain-image img {
+  @apply rounded-xl aspect-[3/2];
+}
+
+.mountain-name {
+  @apply absolute bottom-4 left-4 text-white text-lg font-medium z-20;
+}
+
+/* ----- SOCIAL ICONS ----- */
+.social-icon {
+  @apply w-12 h-12 hover:scale-125 hover:transition-all;
+}

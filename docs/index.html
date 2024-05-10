@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS - Mountains</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ---------- HEADER ---------- -->
+
+    <!-- Headerbar -->
+    <header class="sticky top-0 left-0 bg-white shadow-md z-30">
+      <div
+        class="flex justify-between items-center container mx-auto py-4 px-5">
+        <div class="logo w-20">
+          <a href="#">
+            <img
+              src="./assets/gfx/logo.png"
+              alt="Mountain Logo"
+              title="Mountain"
+          /></a>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="navigation md:flex sm:hidden">
+          <a href="#">About us</a>
+          <a href="#">Mountains</a>
+          <a href="#">Gallery</a>
+          <a href="#">Contact</a>
+        </nav>
+
+        <!-- Mobile Navigation -->
+        <img
+          src="./assets/gfx/icons/hamburgermenu.svg"
+          alt="Menu Icon"
+          title="Menu"
+          class="navigation md:hidden sm:flex" />
+      </div>
+    </header>
+
+    <!-- ---------- HERO ---------- -->
+    <section
+      class="flex justify-center items-center bg-[url('./assets/img/grossglockner.jpg')] bg-cover bg-no-repeat bg-center bg-fixed h-hero">
+      <div class="flex flex-col justify-center items-center md:mt-0 sm:-mt-24">
+        <h1
+          class="lg:text-4xl md:text-3xl sm:text-2xl text-center font-black uppercase w-2/3 mb-4">
+          Let's start your mountain adventure!
+        </h1>
+        <a class="button" href="#">see more</a>
+      </div>
+    </section>
+
+    <!-- ---------- MAIN CONTENT ---------- -->
+    <main class="container mx-auto px-5">
+      <!-- Sidebar -->
+      <aside
+        class="fixed md:top-1/3 sm:bottom-0 md:right-0 sm:right-5 flex md:flex-col sm:flex-row items-end gap-1 z-20">
+        <a class="sidelink" href="tel:+431234567890"
+          ><img
+            src="./assets/gfx/icons/phone-icon.svg"
+            alt="Phone Icon"
+            title="Phone"
+        /></a>
+        <a class="sidelink" href="mailto:e@mail.com"
+          ><img
+            src="./assets/gfx/icons/mail-icon.svg"
+            alt="E-Mail Icon"
+            title="E-Mail"
+        /></a>
+      </aside>
+
+      <!-- Intro -->
+      <section
+        class="flex flex-col justify-center lg:items-center sm:items-start lg:text-center sm:text-left lg:w-4/5 sm:w-full mx-auto my-20">
+        <img
+          src="./assets/gfx/icons/quote-icon.svg"
+          alt="Quote Icon"
+          title="Quote"
+          class="w-8 mb-6" />
+        <h2>Welcome to <span class="uppercase">Mountains</span></h2>
+        <p>
+          Die Website „Mountains“ ist eine umfassende Ressource für alle, die
+          sich für Berge und ihre einzigartige Schönheit interessieren. Die
+          Seite bietet eine detaillierte Liste aller Berge der Welt und enthält
+          Informationen zu ihrer geografischen Lage, Höhe, Topographie und
+          vielem mehr. Darüber hinaus enthält die Website auch Geschichten und
+          Bilder von Menschen, die die Berge erkundet und bestiegen haben, sowie
+          Tipps und Anleitungen für Reisende, die sich auf den Weg machen
+          wollen. Egal, ob Sie ein begeisterter Bergsteiger sind oder einfach
+          nur von der majestätischen Schönheit der Berge fasziniert sind, die
+          Website „Mountains“ ist eine wunderbare Quelle für Informationen und
+          Inspiration.
+        </p>
+      </section>
+
+      <!-- Mountain Boxes -->
+      <section
+        class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6 mb-20">
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/mtcook.jpg"
+              alt="Mount Cook zu Sonnenuntergang"
+              title="Mount Cook" />
+          </div>
+          <div class="mountain-name">Mt Cook</div>
+        </article>
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/weisshorn.jpg"
+              alt="Landschaft mit dem Weisshorn im Hintergrund"
+              title="Weisshorn" />
+          </div>
+          <div class="mountain-name">Weisshorn</div>
+        </article>
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/alpamayo.jpg"
+              alt="Alpamayo im Abendlicht"
+              title="Alpamayo" />
+          </div>
+          <div class="mountain-name">Alpamayo</div>
+        </article>
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/grossglockner.jpg"
+              alt="Großglockner zu Sonnenaufgang"
+              title="Großglockner" />
+          </div>
+          <div class="mountain-name">Großglockner</div>
+        </article>
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/aconcagua.jpg"
+              alt="Aconcagua bei bewölktem Himmel"
+              title="Aconcagua" />
+          </div>
+          <div class="mountain-name">Aconcagua</div>
+        </article>
+        <article class="mountain-box">
+          <div class="mountain-image">
+            <img
+              src="./assets/img/lhotse.jpg"
+              alt="Lhotse mit Nebel im Vordergrund"
+              title="Lhotse" />
+          </div>
+          <div class="mountain-name">Lhotse</div>
+        </article>
+      </section>
+
+      <!-- Mountain Info -->
+      <section
+        class="flex md:flex-row sm:flex-col justify-center items-center gap-12 mb-20">
+        <div class="lg:w-3/5 sm:w-full">
+          <h2>
+            <span class="uppercase">Mountains</span> are
+            <span class="uppercase">great!</span>
+          </h2>
+          <p class="mb-7">
+            Die Website „Mountains“ ist eine umfassende Ressource für alle, die
+            sich für Berge und ihre einzigartige Schönheit interessieren. Die
+            Seite bietet eine detaillierte Liste aller Berge der Welt und
+            enthält Informationen zu ihrer geografischen Lage, Höhe, Topographie
+            und vielem mehr. Darüber hinaus enthält die Website auch Geschichten
+            und Bilder von Menschen, die die Berge erkundet und bestiegen haben,
+            sowie Tipps und Anleitungen für Reisende, die sich auf den Weg
+            machen wollen. Egal, ob Sie ein begeisterter Bergsteiger sind oder
+            einfach nur von der majestätischen Schönheit der Berge fasziniert
+            sind, die Website „Mountains“ ist eine wunderbare Quelle für
+            Informationen und Inspiration.
+          </p>
+          <a class="button" href="https://de.wikipedia.org" target="_blank"
+            >Link zu Wikipedia</a
+          >
+        </div>
+        <div class="mountain-image relative lg:w-2/5 sm:w-full">
+          <div
+            class="absolute md:-top-6 md:bottom-auto md:-left-6 sm:bottom-4 sm:left-4 bg-mountain-blue rounded-full z-20">
+            <img
+              src="./assets/gfx/icons/mountain-icon.svg"
+              class="w-16 h-16 p-2"
+              alt="Mountain Icon"
+              title="Mountain" />
+          </div>
+          <img
+            src="./assets/img/weisshorn.jpg"
+            alt="Landschaft mit dem Weisshorn im Hintergrund"
+            title="Weisshorn"
+            class="w-full h-full" />
+        </div>
+      </section>
+    </main>
+
+    <!-- ---------- FOOTER ---------- -->
+    <footer>
+      <!-- Background Container -->
+      <section class="bg-mountain-blue py-16">
+        <!-- Contact Section -->
+        <section
+          class="container mx-auto flex md:flex-row sm:flex-col md:justify-between sm:justify-center md:items-start sm:items-center px-5">
+          <!-- Left Side - Newsletter -->
+          <div class="md:mb-0 sm:mb-10">
+            <h2 class="uppercase text-white md:text-left sm:text-center">
+              Newsletter
+            </h2>
+            <form>
+              <input
+                class="uppercase font-bold text-xs text-white placeholder-white border-2 border-white rounded-l-lg px-6 py-2 bg-transparent"
+                type="email"
+                placeholder="E-Mail" />
+              <input
+                class="uppercase font-bold text-xs text-mountain-blue hover:text-white border-2 hover:border-l-0 border-white rounded-r-lg px-6 hover:pl-7 py-2 bg-white hover:bg-black cursor-pointer -ml-2 hover:transition-all"
+                type="submit" />
+            </form>
+          </div>
+          <!-- Right Side - Socials -->
+          <div>
+            <h2 class="uppercase text-white md:text-right sm:text-center">
+              Follow us
+            </h2>
+            <div class="flex gap-4">
+              <a class="social-icon" href="https://facebook.com" target="_blank"
+                ><img
+                  src="./assets/gfx/socials/facebook-icon.svg"
+                  alt="Facebook Logo"
+                  title="Facebook"
+              /></a>
+              <a
+                class="social-icon"
+                href="https://instagram.com"
+                target="_blank"
+                ><img
+                  src="./assets/gfx/socials/instagram-icon.svg"
+                  alt="Instagram Logo"
+                  title="Instagram"
+              /></a>
+              <a class="social-icon" href="https://linkedin.com" target="_blank"
+                ><img
+                  src="./assets/gfx/socials/linkedin-icon.svg"
+                  alt="LinkedIn Logo"
+                  title="LinkedIn"
+              /></a>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <!-- Footer Navigation -->
+      <section
+        class="container mx-auto flex md:flex-row sm:flex-col justify-between items-center py-8 px-5">
+        <img
+          class="logo w-20 md:mb-0 sm:mb-10"
+          src="./assets/gfx/logo.png"
+          alt="Mountain Logo"
+          title="Mountain" />
+        <nav class="navigation">
+          <a href="#">Impressum</a>
+          <a href="#">Datenschutz</a>
+        </nav>
+      </section>
+
+      <small class="flex justify-center items-center pb-8"
+        >© Christina Schöffmann</small
+      >
+    </footer>
+  </body>
+</html>
