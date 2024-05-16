@@ -1,1 +1,1 @@
-<h2>Short project landingpage made with TailwindCSS</h2>
+<h2>Short project landingpage made with Tailwind CSS</h2>
